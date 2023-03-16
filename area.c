@@ -1,13 +1,20 @@
 #include <stdio.h>
 
+int addnumber(int x,int y);//formal arguments
 int main()
 {
-	float r,area;
-	printf("enter the redias number :");
-	scanf("%f",&r);
+	int a,b;
+	printf("enter the value od a and b");
+	scanf("%d %d",&a,&b);
 	
-	area=3.14*r*r;
-	printf("total area is redias:%f",area);
+	int c=addnumber(a,b); //actual arguments
+	
+	printf("%d ans is",c);
 	
 	return 0;
+}
+
+int addnumber (int x,int y)
+{
+	return x+y;
 }
