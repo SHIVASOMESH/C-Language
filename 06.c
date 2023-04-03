@@ -1,13 +1,18 @@
 #include<stdio.h>
-#include<string.h>
 
 int main()
 {
-	char str1[20];
-	printf("enter the string :");
-	scanf("%s",str1);
+	int days,weeks,years;
+	printf("Enter the numbers :");
+	scanf("%d",&days);
 	
-	printf("%d",sizeof(str1));
+	years=days/365;
+	weeks=(days/365)*7;
+	days=(days-(years*365)+(weeks*7));
+	
+	printf("years : %d\n",years);
+	printf("weeks : %d\n",weeks);
+	printf("days : %d\n",days);
 	
 	return 0;
 }

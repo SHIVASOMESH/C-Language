@@ -1,13 +1,16 @@
 #include<stdio.h>
-#include<string.h>
 
 int main()
 {
-	char str1[20];
-	printf("enter the string :");
-	scanf("%s",str1);
+	int a,b;
+	printf("Enter the number :");
+	scanf("%d %d",&a,&b);
+
+	a=a+b;
+	b=a-b;	
+	a=a-b;
 	
-	printf("%d",strlen(str1));
-	
+	printf("ofter swpping number a=%d b=%d",a,b);
+
 	return 0;
 }
